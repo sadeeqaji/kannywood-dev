@@ -3,7 +3,6 @@ import axios from "axios";
 import Slider from "react-slick";
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-
 // reactstrap components
 import {
   Button,
@@ -27,7 +26,8 @@ class responsive extends React.Component {
         selectedMovie: []
       }
   }
-    componentDidMount() {
+
+componentDidMount() {
 
 
 
@@ -51,6 +51,7 @@ class responsive extends React.Component {
 handleD () {
   console.log(this.state.selectedMovie)
 }
+
   render() {
     var settings = {
       dots: false,
@@ -86,62 +87,60 @@ handleD () {
         }
       ]
     };
+    const {selectedMovie} = this.state.selectedMovie
     return (
-      <div className="container-fluid ">
-          
 
+      <div className="container-fluid ">
           <div className="col-md-11 mx-auto pt-5">
-          <div className="display-4 text-Movie-white col-md-12 pt-5 pb-3">Featured Movies <hr/></div>
+          <div className="display-4 text-Movie-white col-md-12 py-5">Featured Movies <hr/></div>
           
       <Slider {...settings}>
-        {this.state.movies.map(movie =>
-        <div  className="" >
-           <Card inverse style={{width:"60%", height:"40%"}}>
-        <CardImg width="100%" src={`/files/${movie.thumbnail}`} alt="Card image cap" className="movie-list-filter" />
+        {this.state.featuredMovies.map(movie =>
+        <div  className="" key={movie._id}>
+
+           <Card inverse>
+        <CardImg  src={`/files/${movie.thumbnail}`} alt="Card image cap" />
         <CardImgOverlay className="movie-list-overlay">
           <CardTitle>{movie.MovieName}</CardTitle>
-          <CardText>{movie.description}</CardText>
+          <CardText>{movie.Description}</CardText>
           <CardText>
             <small>
-              <Link 
-              to={{
-              pathname: "watch",
-              state: { movie: movie }
-            }}
-          >
-                <Button className="btn-fill btn-movie " color="primary" onClick={movie}>
-                    Watch  
-                </Button>
-              </Link>
-            </small>
-          </CardText>
-        </CardImgOverlay>
-      </Card>
-        </div>
-        )}
-      </Slider>
-
-       <div className="display-4 text-Movie-white col-md-12 py-2">Trending Movies <hr/></div>
-
-      <Slider {...settings}>
-        {this.state.movies.map(movie =>
-        <div  className="" >
-           <Card inverse style={{width:"60%", height:"40%"}}>
-        <CardImg width="100%" src={`/files/${movie.thumbnail}`} alt="Card image cap" />
-        <CardImgOverlay className="movie-list-overlay">
-          <CardTitle>{movie.MovieName}</CardTitle>
-          <CardText>{movie.description}</CardText>
-          <CardText>
             <Link 
               to={{
               pathname: "watch",
               state: { movie: movie }
             }}
           >
-                <Button className="btn-fill btn-movie " color="primary" onClick={movie}>
-                    Watch  
-                </Button>
-              </Link>
+                    <Button className="btn-fill btn-movie " color="primary" onClick={movie}>
+                      Watch  
+                    </Button></Link></small>
+          </CardText>
+        </CardImgOverlay>
+      </Card>
+        </div>
+        )}
+      </Slider>
+       <div className="display-4 text-Movie-white col-md-12 py-5">Trending Movies <hr/></div>
+
+      <Slider {...settings}>
+          {this.state.movies.map(movie =>
+        <div  className="" key={movie._id}>
+          <Card inverse >
+            <CardImg  src={`/files/${movie.thumbnail}`} alt="Card image cap" />
+            <CardImgOverlay className="movie-list-overlay">
+              <CardTitle>{movie.MovieName}</CardTitle>
+              <CardText>{movie.Description}</CardText>
+          <CardText>
+            <small>
+            <Link 
+              to={{
+              pathname: "watch",
+              state: { movie: movie }
+            }}
+          >
+                    <Button className="btn-fill btn-movie " color="primary">
+                      Watch  
+                    </Button></Link></small>
           </CardText>
         </CardImgOverlay>
       </Card>
@@ -150,13 +149,14 @@ handleD () {
       </Slider>
       <Row>
         <div className="display-4 text-Movie-white col-md-12 py-5">Trending Movies <hr/></div>
-          {this.state.movies.map(movie =>
-          <Col md="3" sm="6" className="" >
-            <Card className="card-user " style={{width:"60%", height:"40%"}}>
-              <CardImg top src={`/files/${movie.thumbnail}`}></CardImg>
+        {this.state.movies.map(movie =>
+          <Col md="3" sm="6" className="" key={movie._id}>
+             <Card inverse >
+                <CardImg  src={`/files/${movie.thumbnail}`} alt="Card image cap" />
                 <CardText className="py-3 px-3">
                   <div className="card-description">
-                    {movie.description}
+
+                    Unlimited entertainment, one low price Stream and download as much as you want, no extra fees.
                   </div>
                   </CardText>
                 <CardFooter>
@@ -166,17 +166,15 @@ handleD () {
               state: { movie: movie }
             }}
           >
-                <Button className="btn-fill btn-movie " color="primary" onClick={movie}>
-                    Watch  
-                </Button>
-              </Link>
+                    <Button className="btn-fill btn-movie " color="primary" >
+                      Watch  
+                    </Button></Link>
                   </div>
                 </CardFooter>
               </Card>
             </Col>
             )}
       </Row>
-      
       </div>
       </div>
 
