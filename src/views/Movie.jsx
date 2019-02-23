@@ -96,7 +96,7 @@ handleD () {
       <Slider {...settings}>
         {this.state.movies.map(movie =>
         <div  className="" >
-           <Card inverse>
+           <Card inverse style={{width:"60%", height:"40%"}}>
         <CardImg width="100%" src={`/files/${movie.thumbnail}`} alt="Card image cap" className="movie-list-filter" />
         <CardImgOverlay className="movie-list-overlay">
           <CardTitle>{movie.MovieName}</CardTitle>
@@ -126,7 +126,7 @@ handleD () {
       <Slider {...settings}>
         {this.state.movies.map(movie =>
         <div  className="" >
-           <Card inverse>
+           <Card inverse style={{width:"60%", height:"40%"}}>
         <CardImg width="100%" src={`/files/${movie.thumbnail}`} alt="Card image cap" />
         <CardImgOverlay className="movie-list-overlay">
           <CardTitle>{movie.MovieName}</CardTitle>
@@ -152,7 +152,7 @@ handleD () {
         <div className="display-4 text-Movie-white col-md-12 py-5">Trending Movies <hr/></div>
           {this.state.movies.map(movie =>
           <Col md="3" sm="6" className="" >
-            <Card className="card-user ">
+            <Card className="card-user " style={{width:"60%", height:"40%"}}>
               <CardImg top src={`/files/${movie.thumbnail}`}></CardImg>
                 <CardText className="py-3 px-3">
                   <div className="card-description">
