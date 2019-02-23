@@ -1,0 +1,340 @@
+/*landind page*/
+.btn-home{
+
+    background: transparent;
+    color: #fff;
+}
+.main-panel[data="blue"] {
+    border-top: 0px solid #1d8cf8 !important;
+}
+.media-left  {
+
+width: 170px !important;
+height: 90px !important;
+
+}
+
+
+.media-object {
+
+width: 170px !important;
+height: 90px !important;
+
+}
+
+.moviecardImg{
+
+	width: 386px;
+	height: 217px;
+}
+
+/*watch movies btton on home page*/
+
+.watchlink {
+
+
+	color: #00c851 !important;
+}
+
+
+.btn-movielist {
+
+background-color: #00c851 !important;
+color: #fff;
+}
+/* home page nav */
+.nav-green{
+    background-color: #00c851 !important;
+    
+}
+
+/*bottn */
+
+.btn-movie {
+
+    background: #00c851;
+        background-color: rgb(0, 242, 195);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-image: none;
+        background-size: auto;
+    background-image: -webkit-linear-gradient(to bottom left, #00c851, #39985f, #00c851);
+    background-image: -webkit-linear-gradient(top right, #00c851, #39985f, #00c851);
+    background-image: linear-gradient(to bottom left, #00c851, #39985f, #00c851);
+    background-size: 210% 210%;
+    background-position: top right;
+    background-color: #00c851;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    box-shadow: none;
+    color: #ffffff;
+    }
+
+    .btn-movie:hover {
+
+    background: #00c851;
+        background-color: rgb(0, 242, 195);
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-image: none;
+        background-size: auto;
+    background-image: -webkit-linear-gradient(to bottom left, #00c851, #0098f0, #00c851);
+    background-image: -webkit-linear-gradient(top right, #00c851, #0098f0, #00c851);
+    background-image: linear-gradient(to bottom left, #00c851, #0098f0, #00c851);
+    background-size: 210% 210%;
+    background-position: top right;
+    background-color: #00c851;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    box-shadow: none;
+    color: #ffffff;
+    }
+
+    .block {
+
+        background: linear-gradient(to right, rgba(36, 194, 121, 0.6) 0%, rgba(225, 78, 202, 0) 100%) !important;
+    }
+
+    .text-Movie-white {
+
+
+        color: #fff;
+    }
+
+
+    /*collage background image  */
+
+    .bg-black-solid{
+        background: linear-gradient(90deg, rgba(7, 7, 7, 0.55) 23%, rgba(7, 7, 7, 0.55) 69%), url("/img/collage.jpg");
+            height: 100%;
+             width: 100%;
+             background-size: cover;
+            background-repeat: no-repeat;
+    }
+    .bg-solid{
+        background: linear-gradient(90deg, rgba(7, 7, 7, 0.75) 23%, rgba(7, 7, 7, 0.75) 69%), url(/img/collage.jpg);
+            height: 100%;
+             width: 100%;
+             background-size: cover;
+            background-repeat: no-repeat;
+    }
+
+
+    /*card*/
+    .card-transparent{
+        box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.78) !important;
+background: #000000d1  !important;
+    }
+
+    .card-light{
+        box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.78) !important;
+background: transparent  !important;
+    }
+
+    .bg-black{
+
+        
+    }
+
+
+    .card{
+
+        box-shadow: 0 0px 0px rgba(0,0,0,.0),0 0px 0px rgba(0,0,0,.0) !important;
+    }
+    .card-user{
+
+        box-shadow: 0 0px 0px rgba(0,0,0,.0),0 0px 0px rgba(0,0,0,.0) !important;
+    }
+    .card:hover{
+
+        box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1)!important;
+    }
+    .card-user:hover{
+
+        box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1)!important;
+    }
+
+    .movie-list-overlay{
+
+        background: linear-gradient(90deg, rgba(7, 7, 7, 0.55) 23%, rgba(7, 7, 7, 0.55) 69%);
+    }
+
+
+    tr{
+
+        color: #777 !important;
+    }
+
+ td {
+
+        color: #777 !important;
+    }
+
+
+    .odd{
+
+        color: #777 !important;
+    }
+    .even{
+
+        color: #777 !important;
+    }
+
+    table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+    border-top: 1px solid #ddd;
+    color: #777 !important;
+}
+
+.sorting_asc {
+    
+    color: #777 !important;
+}
+.sorting {
+    
+    color: #777 !important;
+}
+
+
+
+
+/*test  grey*/
+
+div .history-filter  {
+
+    -webkit-filter: grayscale(100%) blur(0px);
+    filter: grayscale(100%) blur(0px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+div .history-filter:hover{
+
+    -webkit-filter: grayscale(50%) blur(0px);
+    filter: grayscale(50%) blur(0px);
+}
+
+
+
+
+div .clear-grey{
+
+    -webkit-filter: grayscale(0%)blur(0px) ;
+    filter: grayscale(0%) blur(0px);
+}
+div .clear-grey:hover{
+
+    -webkit-filter: grayscale(0%)blur(0px) ;
+    filter: grayscale(0%) blur(0px);
+}
+
+
+
+.btn-history{
+
+    background: #fff;
+    color: green;
+    border: 0px;
+    /*position: ;*/
+    margin: auto;
+    
+}
+.btn-history:hover{
+
+    background: #fff !important;
+    color: green;
+    /*border: 2px  solid #fff;*/
+    
+}
+
+.btn-history a{
+
+    background: #fff !important;
+    color: green ;
+    font-weight: 1em;
+    /*border: 2px  solid #fff;*/
+    
+}
+
+/*input button*/
+.form-control:focus {
+    border-color: #ffffff !important;
+    border-radius: 0.4285rem;
+    font-size: 0.75rem;
+    background: transparent;
+
+}
+
+
+.form-control {
+    border-color: #115b39 !important;
+    border-radius: 0.4285rem;
+    font-size: 0.75rem;
+    background: transparent;
+
+}
+
+
+
+/*select*/
+select > option {
+ 
+  background-color:#27293d;
+ 
+ 
+}
+
+
+/*upload*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 170px;
+    height: 150px;
+    padding: 0px
+}
+
+
+ .slick-slide {
+    
+     filter: grayscale(100%);
+     -ms-transform: scale();
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+     transition: all .7s;
+   
+    }
+.slick-slide:hover {
+   
+    filter: grayscale(0%) !important;
+       
+}
+
+.slick-slide:hover, .slick-slide:focus {
+    transition: all .5s;
+   
+     -ms-transform: scale();
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    
+}
