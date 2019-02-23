@@ -98,7 +98,7 @@ handleD () {
         {this.state.featuredMovies.map(movie =>
         <div  className="" key={movie._id}>
 
-           <Card inverse>
+           <Card inverse >
         <CardImg  src={`/files/${movie.thumbnail}`} alt="Card image cap" />
         <CardImgOverlay className="movie-list-overlay">
           <CardTitle>{movie.MovieName}</CardTitle>
@@ -125,11 +125,11 @@ handleD () {
       <Slider {...settings}>
           {this.state.movies.map(movie =>
         <div  className="" key={movie._id}>
-          <Card inverse >
-            <CardImg  src={`/files/${movie.thumbnail}`} alt="Card image cap" />
-            <CardImgOverlay className="movie-list-overlay">
-              <CardTitle>{movie.MovieName}</CardTitle>
-              <CardText>{movie.Description}</CardText>
+           <Card inverse inverse >
+        <CardImg width="100%" src={`/files/${movie.thumbnail}`} alt="Card image cap" />
+        <CardImgOverlay className="movie-list-overlay">
+          <CardTitle>{movie.MovieName}</CardTitle>
+          <CardText>{movie.Description}</CardText>
           <CardText>
             <small>
             <Link 
@@ -151,12 +151,12 @@ handleD () {
         <div className="display-4 text-Movie-white col-md-12 py-5">Trending Movies <hr/></div>
         {this.state.movies.map(movie =>
           <Col md="3" sm="6" className="" key={movie._id}>
-             <Card inverse >
-                <CardImg  src={`/files/${movie.thumbnail}`} alt="Card image cap" />
+            <Card className="card-user card-transparent">
+              <CardImg top src={`/files/${movie.thumbnail}`}></CardImg>
                 <CardText className="py-3 px-3">
                   <div className="card-description">
 
-                    Unlimited entertainment, one low price Stream and download as much as you want, no extra fees.
+                   {movie.Description}
                   </div>
                   </CardText>
                 <CardFooter>
