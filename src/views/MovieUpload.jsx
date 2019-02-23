@@ -77,7 +77,7 @@ class MovieUpload extends React.Component {
                   <h5 className="title">Upload Movie</h5>
                 </CardHeader>
                 <CardBody>
-                  <Form action="http://localhost:5000/upload" method="post" encType="multipart/form-data">
+                  <Form action="http://157.230.132.76:5000/upload" method="post" encType="multipart/form-data">
                     <Row>
                       <Col className="pr-md-1" md="5">
                         <FormGroup>

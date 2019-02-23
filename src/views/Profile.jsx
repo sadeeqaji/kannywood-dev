@@ -14,7 +14,7 @@ import {
 
 class Profile extends React.Component {
   render() {
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem('cptoken');
       const payload = decode(token);
     return (
       <>
