@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import decode from "jwt-decode";
 // javascript plugin used to create scrollbars on windows
-import PerfectScrollbar from "perfect-scrollbar";
+import PerfectScrollbar from "react-perfect-scrollbar";
 
 // core components
 import UserNavbar from "components/Navbars/UserNavbar.jsx";
