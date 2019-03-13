@@ -72,9 +72,14 @@ class Register extends React.Component {
         console.log(result);
         this.setState({message: result.data})
         if(result.request.status === 200) {
-          this.props.history.push("/user/movie");
+          const token = decode(result.data)
+          console.log(token)
+          if(token.isUser){
+            this.props.history.push("/user/movie");
           localStorage.setItem('cptoken', result.data)
           this.setState();
+          }
+          
         }
         else if (result.status === 500) {
             this.setState({message: "Network error"});
