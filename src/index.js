@@ -15,15 +15,15 @@ import "assets/css/style.css";
 
 
 const hist = createBrowserHistory();
-
+const baseUrl = process.env.PUBLIC_URL;
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-    <Route path="/rtl" render={props => <RTLLayout {...props} />} />
+    <Route path={baseUrl + "/rtl"} render={props => <RTLLayout {...props} />} />
      
-      <Route path="/admin" render={props => <AdminLayout {...props} />} />
-      <Route path="/User" render={props => <UserLayout {...props} />} />
-      <Route path="/Cp" render={props => <CPLayout {...props} />} />
+      <Route path={baseUrl + "/admin"} render={props => <AdminLayout {...props} />} />
+      <Route path={baseUrl + "/User"} render={props => <UserLayout {...props} />} />
+      <Route path={baseUrl + "/Cp"} render={props => <CPLayout {...props} />} />
 
       <Redirect from="/" to="/rtl/home" />
       
