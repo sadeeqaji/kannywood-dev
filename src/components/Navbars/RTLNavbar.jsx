@@ -1,7 +1,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import { Link } from 'react-router-dom';
+
 // reactstrap components
 import {
   Button,
@@ -101,18 +101,18 @@ class UserNavbar extends React.Component {
               
            
               <InputGroup className="signin-bar" >
-              <Link to="login">
+              <a href="login">
               <Button className="btn-home"
                  color="primary"
                   id="signIn-button"
                    >
                      Sign in   
                      
-              </Button></Link>
+              </Button></a>
               </InputGroup>
             
               <InputGroup className="Contact-bar" >
-              <Link to="About">
+              <a href="About">
               <Button className="btn-home"
                   color="primary"
                   id="About-button"
@@ -120,7 +120,7 @@ class UserNavbar extends React.Component {
                    
                     >
                       About    
-              </Button></Link>
+              </Button></a>
               </InputGroup>
                 <li className="separator d-lg-none" />
               </Nav>

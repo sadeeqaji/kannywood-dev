@@ -1,8 +1,7 @@
 import React from "react";
 import axios from "axios";
 import decode from "jwt-decode";
-import { Router, Route, Switch, Redirect, Link } from "react-router-dom";
-
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 
 // reactstrap components
@@ -152,7 +151,7 @@ class Register extends React.Component {
                       Sign in
                     </Button>
                   </div>
-                  <p className="text-center"> Don't have Account. Sign up <Link to="register"> here </Link> |  <Link to="reset"> Forgot password </Link> </p>
+                  <p className="text-center"> Don't have Account. Sign up <a href="register"> here </a> |  <a href="reset"> Forgot password </a> </p>
                 </CardFooter>
                   </Form>
                 </CardBody>

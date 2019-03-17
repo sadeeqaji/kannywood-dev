@@ -1,6 +1,6 @@
 import React from "react";
 import LiveChat from 'react-livechat';
-import { Link } from 'react-router-dom';
+
 // reactstrap components
 import {
   Button,
@@ -26,10 +26,10 @@ class Landing extends React.Component {
                   <p className="display-5">Watch thousands of Hausa movies and series on all your devices without paying more</p>
                 </CardHeader>
                 
-                <CardFooter><Link to="register">
+                <CardFooter><a href="register">
                   <Button className="btn-fill" color="primary">
                      Start Watching 
-                  </Button></Link>
+                  </Button></a>
                 </CardFooter>
               </Card>
             </Col>   
@@ -51,10 +51,10 @@ class Landing extends React.Component {
                   </div>
                   </CardText>
                 <CardFooter>
-                  <div className="button-container  py-3"><Link to="register">
+                  <div className="button-container  py-3"><a href="register">
                     <Button className="btn-fill " color="primary" >
                       Watch all 
-                    </Button></Link>
+                    </Button></a>
                   </div>
                 </CardFooter>
               </Card>
@@ -68,10 +68,10 @@ class Landing extends React.Component {
                     </div>
                   </CardText>
                 <CardFooter>
-                  <div className="button-container py-3 "><Link to="register">
+                  <div className="button-container py-3 "><a href="register">
                     <Button className="btn-fill " color="primary" type="submit">
                       Sign Up
-                    </Button> </Link>
+                    </Button> </a>
                   </div>
                 </CardFooter>
               </Card>
