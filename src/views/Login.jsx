@@ -67,7 +67,7 @@ class Register extends React.Component {
       e.preventDefault()
       const {email, password} = this.state;
 
-      axios.post('http://104.248.212.163:5000/user/login', { email, password})
+      axios.post('104.248.212.163:5000/user/login', { email, password})
       .then((result) => {
         console.log(result);
         this.setState({message: result.data})
