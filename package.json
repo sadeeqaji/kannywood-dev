@@ -9,7 +9,6 @@
     "bootstrap": "4.1.3",
     "chart.js": "^2.7.2",
     "classnames": "2.2.6",
-    "env-cmd": "^8.0.2",
     "fetch": "^1.1.0",
     "history": "4.7.2",
     "jwt-decode": "^2.2.0",
@@ -33,7 +32,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:prod": "env-cmd .env.staging npm run build",
+    "build:staging": "env-cmd .env.staging npm build",
+    "build:prod": "env-cmd .env npm build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
