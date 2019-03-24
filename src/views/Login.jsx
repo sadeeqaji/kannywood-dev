@@ -66,8 +66,8 @@ class Register extends React.Component {
     onSubmit = (e) => {
       e.preventDefault()
       const {email, password} = this.state;
-
-      axios.post('104.248.212.163:5000/user/login', { email, password})
+console.log(process.env.REACT_APP_API_URLe)
+      axios.post(`${process.env.REACT_APP_API_URL}/user/login`, { email, password})
       .then((result) => {
         console.log(result);
         this.setState({message: result.data})
