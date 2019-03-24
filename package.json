@@ -32,8 +32,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:staging": "env-cmd .env.staging npm build",
-    "build:prod": "env-cmd .env npm build",
+    "build:staging": "env-cmd .env.staging npm run build",
+    "build:prod": "env-cmd .env npm run build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
